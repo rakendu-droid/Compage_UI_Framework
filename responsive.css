@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+
+
+/* Mobile Layout: 480px and below. */
+  
+.panel			{ 	padding:1rem; margin-bottom:.125rem; margin:.125rem; border:1px solid #FDFDFF;}
+ 
+.container 		{	margin-left: auto;	margin-right: auto;	width: 100%;	 padding: 0;	clear: none; float: none; }
+
+.grids_1_1_1_1 		{ 	width:8.33333%; 	float:left; clear:right;	 	}
+.grids_2_2_2_2 		{ 	width:16.66667%; 	float:left; clear:right;	 	}
+.grids_3_3_3_3		{ 	width:25%; 	float:left; clear:right;	 			}
+.grids_4_4_4_4 		{ 	width:33.33333%; 	float:left; clear:right;	 	}
+.grids_5_5_5_5 		{ 	width:41.66667%; 	float:left; clear:right;	 	}
+.grids_6_6_6_6 		{ 	width:50%; 	float:left; clear:right;	 			}
+.grids_7_7_7_7 		{ 	width:58.33333%; 	float:left; clear:right;	 	}
+.grids_8_8_8_8 		{ 	width:66.66667%; 	float:left; clear:right;	 	}
+.grids_9_9_9_9 		{ 	width:75%; 	float:left; clear:right;	 			}
+.grids_10_10_10_10 	{ 	width:83.33333%; 	float:left; clear:right;	 	}
+.grids_11_11_11_11 	{ 	width:91.66667%; 	float:left; clear:right;	 	}
+.grids_12_12_12_12 	{ 	width:100%; 	float:left; clear:right;	 			}
+
+.grids_12_6_3_3		{ 	width:100%; 	float:left; clear:right;	 			}
+.grids_6_6_3_3		{ 	width:50%;	float:left; clear:right;	 			}
+.grids_12_6_4_4 	{ 	width:100%; 	float:left; clear:right;	 	}
+.grids_12_6_4_1 	{ 	width:100%; 	float:left; clear:right;	 			}
+.grids_12_1_1_1 	{ 	width:100%; 	float:left; clear:right;	 			}
+.grids_6_4_4_2 		{ 	width:50%; 	float:left; clear:right;	 			}
+.grids_12_4_4_2 	{ 	width:100%; 	float:left; clear:right;	 			}
+.grids_6_2_2_1 		{ 	width:50%; 	float:left; clear:right;	 			}
+.grids_12_4_2_2 	{ 	width:100%; 	float:left; clear:right;	 			}
+.grids_12_8_8_10	{ 	width:100%; float:left; clear:right;	 			}
+.grids_12_8_10_10	{ 	width:100%; 	float:left; clear:right;	 			}
+.grids_12_10_10_10	{ 	width:100%; 	float:left; clear:right;	 			}
+.grids_12_11_11_11	{ 	width:100%; 	float:left; clear:right;	 			}
+
+
+
+h1		{	font-size:3em;	}
+banner {background-image:url(images/slider-1.jpg); background-repeat:no-repeat; background-size:cover; padding:36% 0; background-position: 2% 88%; display:block;}
+banner h1	{ 	font-size:2em;	 color:#fff; font-family: Compage-Light; font-weight: lighter; text-align:center;}
+
+.t3em	{	font-size:3em !important;	}
+.t5em	{	font-size:3em !important;	}
+.mobile_only_text_center	{ text-align:center;	}
+.mobile_only_hide	{	display:none;	}
+
+menu
+{
+	  background: rgba(0, 101, 226, 0.77);
+	  width: 98%;
+	  margin: 0;
+	  height: 100%;
+	  padding: 1%;
+	  position: fixed;
+	  z-index: 1;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+.panel			{ 	padding:.85rem; margin-bottom:.125rem; margin:.125rem;	}
+ 
+.container 		{	margin-left: auto;	margin-right: auto;	width: 100%;	 padding: 0;	clear: none; float: none; }
+
+.grids_1_1_1_1 		{ 	width:8.33333%; 	float:left; clear:right;	 		}
+.grids_2_2_2_2 		{ 	width:16.66667%; 	float:left; clear:right;	 	}
+.grids_3_3_3_3		{ 	width:25%; 	float:left; clear:right;	 			}
+.grids_4_4_4_4 		{ 	width:33.33333%; 	float:left; clear:right;	 	}
+.grids_5_5_5_5 		{ 	width:41.66667%; 	float:left; clear:right;	 	}
+.grids_6_6_6_6 		{ 	width:50%; 	float:left; clear:right;	 			}
+.grids_7_7_7_7 		{ 	width:58.33333%; 	float:left; clear:right;	 	}
+.grids_8_8_8_8 		{ 	width:66.66667%; 	float:left; clear:right;	 	}
+.grids_9_9_9_9 		{ 	width:75%; 	float:left; clear:right;	 			}
+.grids_10_10_10_10 	{ 	width:83.33333%; 	float:left; clear:right;	 	}
+.grids_11_11_11_11 	{ 	width:91.66667%; 	float:left; clear:right;	 	}
+.grids_12_12_12_12 	{ 	width:100%; 	float:left; clear:right;	 			}
+
+.grids_12_6_3_3		{ 	width:50%; 			float:left; clear:right;	 	}
+.grids_6_6_3_3		{ 	width:50%; 			float:left; clear:right;	 	}
+.grids_12_6_4_4 	{ 	width:50%; 			float:left; clear:right;	 	}
+.grids_12_6_4_1 	{ 	width:50%; 			float:left; clear:right;	 	}
+.grids_12_1_1_1 	{ 	width:8.33333%; 	float:left; clear:right;	 	}
+.grids_6_2_2_1 		{ 	width:16.66667%; 	float:left; clear:right;	 	}
+.grids_6_4_4_2 		{ 	width:33.33333%; 	float:left; clear:right;	 	}
+.grids_12_4_4_2 	{ 	width:33.33333%; 	float:left; clear:right;	 	}
+.grids_12_4_2_2 	{ 	width:33.33333%; 	float:left; clear:right;	 	}
+.grids_12_8_8_10	{ 	width:66.66667%; 	float:left; clear:right;	 	}
+.grids_12_8_10_10	{ 	width:66.66667%; 	float:left; clear:right;	 	}
+.grids_12_10_10_10	{ 	width:83.33333%; 	float:left; clear:right;	 	}
+.grids_12_11_11_11	{ 	width:91.66667%; 	float:left; clear:right;	 	}
+
+
+h1				{	font-size:3em;	}
+banner {background-image:url(images/slider-1.jpg); background-repeat:no-repeat; background-size:cover; padding:14% 0; background-position: 2% 88%; display:block;}
+banner h1		{ 	font-size:3em;	 color:#fff; font-family: Compage-Light; font-weight: lighter; text-align:center;}
+
+.t3em	{	font-size:3em !important;	}
+.t5em	{	font-size:4em !important;	}
+.mobile_only_text_center	{ text-align:left;	}
+.mobile_only_hide	{	display:block;	}
+
+menu
+{
+	  background: rgba(0, 101, 226, 0.77);
+	  width: 35%;
+	  margin: 0;
+	  height: 100%;
+	  padding: .4% .5%;
+	  position: fixed;
+}
+
+}
+
+/* Desktop Layout: 769px to a max of 1024px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+.panel			{ 	padding:.75rem; margin-bottom:.125rem; margin:.125rem;	}
+ 
+.container 		{	margin-left: auto;	margin-right: auto;	width: 100%;	 padding: 0;	clear: none; float: none; }
+
+.grids_1_1_1_1 		{ 	width:8.33333%; 	float:left; clear:right;	 		}
+.grids_2_2_2_2 		{ 	width:16.66667%; 	float:left; clear:right;	 	}
+.grids_3_3_3_3		{ 	width:25%; 	float:left; clear:right;	 			}
+.grids_4_4_4_4 		{ 	width:33.33333%; 	float:left; clear:right;	 	}
+.grids_5_5_5_5 		{ 	width:41.66667%; 	float:left; clear:right;	 	}
+.grids_6_6_6_6 		{ 	width:50%; 	float:left; clear:right;	 			}
+.grids_7_7_7_7 		{ 	width:58.33333%; 	float:left; clear:right;	 	}
+.grids_8_8_8_8 		{ 	width:66.66667%; 	float:left; clear:right;	 	}
+.grids_9_9_9_9 		{ 	width:75%; 	float:left; clear:right;	 			}
+.grids_10_10_10_10 	{ 	width:83.33333%; 	float:left; clear:right;	 	}
+.grids_11_11_11_11 	{ 	width:91.66667%; 	float:left; clear:right;	 	}
+.grids_12_12_12_12 	{ 	width:100%; 	float:left; clear:right;	 			}
+
+.grids_12_6_3_3		{ 	width:25%; 			float:left; clear:right;	 	}
+.grids_6_6_3_3		{ 	width:25%; 			float:left; clear:right;	 	}
+.grids_12_6_4_4 	{ 	width:33.33333%; 	float:left; clear:right;	 	}
+.grids_12_6_4_1 	{ 	width:33.33333%; 	float:left; clear:right;	 	}
+.grids_12_1_1_1 	{ 	width:8.33333%; 		float:left; clear:right;	 	}
+.grids_6_2_2_1 		{ 	width:16.66667%; 	float:left; clear:right;	 	}
+.grids_6_4_4_2 		{ 	width:33.33333%; 	float:left; clear:right;	 	}
+.grids_12_4_4_2 	{ 	width:33.33333%; 	float:left; clear:right;	 	}
+.grids_12_4_2_2 	{ 	width:16.66667%; 	float:left; clear:right;	 	}
+.grids_12_8_8_10	{ 	width:66.66667%; 	float:left; clear:right;	 	}
+.grids_12_8_10_10	{ 	width:83.33333%; 	float:left; clear:right;	 	}
+.grids_12_10_10_10	{ 	width:83.33333%; 	float:left; clear:right;	 	}
+.grids_12_11_11_11	{ 	width:91.66667%; 	float:left; clear:right;	 	}
+
+
+h1				{	font-size:3em;	 font-weight: lighter;	}
+banner {background-image:url(images/slider-1.jpg); background-repeat:no-repeat; background-size:cover; padding:14% 0; background-position: 2% 88%; display:block;}
+banner h1		{ 	font-size:3em;	 color:#fff; font-family: Compage-Light; font-weight: lighter; text-align:center;}
+
+.t3em	{	font-size:3em !important;	}
+.t5em	{	font-size:4em !important;	}
+.mobile_only_text_center	{ text-align:left;	}
+.mobile_only_hide	{	display:block;	}
+
+menu	{	background: rgba(0, 101, 226, 0.77); width: 20%; margin: 0;	height: 100%;	padding: .4% .5%;	position: fixed;		}
+
+}
+
+
+/* Laptop Layout: 1025px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1025px) {
+
+.panel			{ 	padding:.75rem; margin-bottom:.125rem; margin:.125rem;	}
+ 
+.container 		{	margin-left: auto;	margin-right: auto;	width: 100%;	 padding: 0;	clear: none; float: none; }
+
+.grids_1_1_1_1 		{ 	width:8.33333%; 	float:left; clear:right;	 		}
+.grids_2_2_2_2 		{ 	width:16.66667%; 	float:left; clear:right;	 	}
+.grids_3_3_3_3		{ 	width:25%; 	float:left; clear:right;	 			}
+.grids_4_4_4_4 		{ 	width:33.33333%; 	float:left; clear:right;	 	}
+.grids_5_5_5_5 		{ 	width:41.66667%; 	float:left; clear:right;	 	}
+.grids_6_6_6_6 		{ 	width:50%; 	float:left; clear:right;	 			}
+.grids_7_7_7_7 		{ 	width:58.33333%; 	float:left; clear:right;	 	}
+.grids_8_8_8_8 		{ 	width:66.66667%; 	float:left; clear:right;	 	}
+.grids_9_9_9_9 		{ 	width:75%; 	float:left; clear:right;	 			}
+.grids_10_10_10_10 	{ 	width:83.33333%; 	float:left; clear:right;	 	}
+.grids_11_11_11_11 	{ 	width:91.66667%; 	float:left; clear:right;	 	}
+.grids_12_12_12_12 	{ 	width:100%; 	float:left; clear:right;	 			}
+
+.grids_12_6_3_3		{ 	width:25%; 			float:left; clear:right;	 	}
+.grids_6_6_3_3		{ 	width:25%; 			float:left; clear:right;	 	}
+.grids_12_6_4_4 	{ 	width:33.33333%; 	float:left; clear:right;	 	}
+.grids_12_6_4_1 	{ 	width:8.33333%; 		float:left; clear:right;	 	}
+.grids_12_1_1_1 	{ 	width:8.33333%; 		float:left; clear:right;	 	}
+.grids_6_2_2_1 		{ 	width:8.33333%; 		float:left; clear:right;	 	}
+.grids_6_4_4_2 		{ 	width:16.66667%; 	float:left; clear:right;	 	}
+.grids_12_4_4_2 	{ 	width:16.66667%; 	float:left; clear:right;	 	}
+.grids_12_4_2_2 	{ 	width:16.66667%; 	float:left; clear:right;	 	}
+.grids_12_8_8_10	{ 	width:83.33333%; 	float:left; clear:right;	 	}
+.grids_12_8_10_10	{ 	width:83.33333%; 	float:left; clear:right;	 	}
+.grids_12_10_10_10	{ 	width:83.33333%; 	float:left; clear:right;	 	}
+.grids_12_11_11_11	{ 	width:91.66667%; 	float:left; clear:right;	 	}
+
+
+
+h1				{	font-size:3em;	 font-weight: lighter;	}
+banner {background-image:url(images/slider-1.jpg); background-repeat:no-repeat; background-size:cover; padding:14% 0; background-position: 2% 88%; display:block;}
+banner h1		{ 	font-size:3em;	 color:#fff; font-family: Compage-Light; font-weight: lighter; text-align:center;}
+
+.t3em	{	font-size:3em !important;	}
+.t5em	{	font-size:5em !important;	}
+.mobile_only_text_center	{ text-align:left;	}
+.mobile_only_hide	{	display:block;	}
+
+menu	{	background: rgba(0, 101, 226, 0.77); width: 20%; margin: 0;	height: 100%;	padding: .4% .5%;	position: fixed;	
+-webkit-box-shadow: 5px 0px 5px -1px rgba(0,0,0,0.25);
+-moz-box-shadow: 5px 0px 5px -1px rgba(0,0,0,0.25);
+box-shadow: 5px 0px 5px -1px rgba(0,0,0,0.25);	}
+
+}
